@@ -52,17 +52,34 @@ public class Main {
             if (months2 % 6 == 0) {
                 System.out.println(months2 + "-й месяц, сумма накоплений " + contribution2);
             }
-            //задание 2
-            System.out.println("\n");
+        }
 
-
-
-
+        //задание 3
+        int contribution3 = 15000;
+        int months3 = 0;
+        while (months3 < 108) {
+            contribution3 = contribution3 + contribution3 / 100 * 7;
+            months3++;
+            if (months2 % 6 == 0) {
+                System.out.println(months3 + contribution3);
+                }
             }
-
+        //Задание 4
+        int friday=7;
+        while (friday<=31){
+            System.out.println("Сегодня пятница " +friday + "-е число. Необходимо подготовить отчет");
+            friday= friday+7;
+        }
 
         }
+
+
     }
+
+
+
+
+
 
 
 
