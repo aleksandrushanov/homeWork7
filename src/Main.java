@@ -6,12 +6,12 @@ public class Main {
 
         int salary = 15000;
         int total = 0;
-        int i = 0;
+        int numberOfMonths = 0;
         while (total < 1_000_000) {
             total = total + total / 100;
             total = total + salary;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
-            i++;
+            System.out.println("Месяц " + numberOfMonths + " сумма накоплений равна " + total + " рублей");
+            numberOfMonths++;
         }
         System.out.println("\n");
         ////Задание 2
@@ -26,15 +26,14 @@ public class Main {
         }
         System.out.println("\n");
         /// Задание 3
-        int country = 12_000_000;
-        int birthRate = 17;
-        int mortality = 8;
-        int totalForTheYear = country / 1000 * (birthRate - mortality);
-        for (int v = 1; v <= 10; v++) {
-            country = country + totalForTheYear;
-            System.out.println("Год " + v + " численность населения составляет " + country);
+        int population = 12_000_000;
+        int birthRate = population/1000*17;
+        int mortality = population/1000*8;
+        for (int year = 1; year <= 10; year++) {
+            population=population +birthRate - mortality;
+            System.out.println("Год " + year + " численность населения составляет " + population);
         }
-        System.out.println("\n)");
+        System.out.println("\n");
         System.out.println("задание 2");
         //задание 1
         int contribution = 15000;
@@ -88,8 +87,8 @@ public class Main {
         }
         System.out.println("\n");
         //Задание 2
-        for (int w= 1;w <= 10; w++) {
-            System.out.println("2 * " + w + "=" +  2 * w);
+        for (int table= 1;table <= 10; table++) {
+            System.out.println("2 * " + table + "=" +  2 * table);
         }
 
 
