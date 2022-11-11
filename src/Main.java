@@ -26,13 +26,18 @@ public class Main {
         }
         System.out.println("\n");
         /// Задание 3
-        int population = 12_000_000;
-        int birthRate = population/1000*17;
-        int mortality = population/1000*8;
-        for (int year = 1; year <= 10; year++) {
-            population=population +birthRate - mortality;
-            System.out.println("Год " + year + " численность населения составляет " + population);
+        long population = 12_000_000;
+        int newborns=17;
+        int mortality=8;
+        int populationGrowth = newborns - mortality;
+        int years=0;
+        while (years<10){
+            population = population + (population * populationGrowth)/1000;
+            years++;
+            System.out.println("Год " + years + " численность населения составляет " + population);
         }
+
+
         System.out.println("\n");
         System.out.println("задание 2");
         //задание 1
